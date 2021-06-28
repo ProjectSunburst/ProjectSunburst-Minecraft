@@ -1,0 +1,5 @@
+name: ProjectSunburst
+version: ${project.version}
+api-version: 1.17
+main: me.focusvity.dev.projectsunburst.core.Main
+author: NotInSync (Focusvity)
