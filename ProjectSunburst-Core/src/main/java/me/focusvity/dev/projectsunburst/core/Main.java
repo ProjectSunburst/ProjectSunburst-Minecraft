@@ -8,11 +8,13 @@ public class Main extends JavaPlugin implements SunburstApiProvider
 {
 
     private static Main plugin;
+    private Provider provider;
 
     @Override
     public void onEnable()
     {
         plugin = this;
+        provider = new Provider();
     }
 
     @Override
@@ -24,6 +26,6 @@ public class Main extends JavaPlugin implements SunburstApiProvider
     @Override
     public SunburstApi getApi()
     {
-        return null;
+        return provider;
     }
 }
